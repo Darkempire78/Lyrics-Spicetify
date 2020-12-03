@@ -14,10 +14,12 @@ Finaly replace teh extension line with ``extensions = spotifyLyrics.js`` in the 
 ## Enable the Lyrics Mode
 
 Enable the mode in the Spotify Menu (in the top right).
+
+![](https://github.com/Darkempire78/Spotify-Lyrics/blob/main/.github/Capture2.png)
+
 Click on the "LYRICS" button (next to the skip button) to display the lyrics.
 
-![](https://github.com/Darkempire78/Spotify-Lyrics/master/.github/Capture2.png)
-![](https://github.com/Darkempire78/Spotify-Lyrics/master/.github/Capture1.png)
+![](https://github.com/Darkempire78/Spotify-Lyrics/blob/main/.github/Capture1.png)
 
 ## Contributing
 
