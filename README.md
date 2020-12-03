@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/darkempire78/Spotify-Lyrics/badge/master)](https://www.codefactor.io/repository/github/darkempire78/Spotify-Lyrics/overview/master) ![](https://img.shields.io/github/repo-size/Darkempire78/Spotify-Lyrics)
+[![CodeFactor](https://www.codefactor.io/repository/github/darkempire78/spotify-lyrics/badge)](https://www.codefactor.io/repository/github/darkempire78/spotify-lyrics) ![](https://img.shields.io/github/repo-size/Darkempire78/Spotify-Lyrics)
 
 # Spotify Lyrics
 
