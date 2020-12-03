@@ -6,9 +6,9 @@
 
 /// <reference path="../globals.d.ts" />
 
-(function lyrics() {
+(function spotifyLyrics() {
     if (!Spicetify.LocalStorage) {
-        setTimeout(lyrics, 1000);
+        setTimeout(spotifyLyrics, 1000);
         return;
     }
 
