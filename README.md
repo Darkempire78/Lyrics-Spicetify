@@ -6,7 +6,7 @@ Spotify Lyrics is a Spotify extension that allows you to display the lyrics of t
 
 ## Installation
 
-* Download the [command-line tool to customize Spotify client.](https://github.com/khanhas/spicetify-cli).
+* Download the [command-line tool to customize Spotify client](https://github.com/khanhas/spicetify-cli).
 * Do not forget to download the ``globals.d.ts`` file and add it to the main spicetify-cli folder.
 * Then add the ``spotifyLyrics.js`` file (from this repository) to the Extensions folder (in .spicetify\Extensions).
 * Finaly replace the extension line with ``extensions = spotifyLyrics.js`` in the config file and do this line : ``.spicetify apply`` on the command prompt.
