@@ -1,8 +1,8 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/darkempire78/spotify-lyrics/badge)](https://www.codefactor.io/repository/github/darkempire78/spotify-lyrics) ![](https://img.shields.io/github/repo-size/Darkempire78/Spotify-Lyrics)
+[![CodeFactor](https://www.codefactor.io/repository/github/darkempire78/Lyrics-Spicetify/badge)](https://www.codefactor.io/repository/github/darkempire78/Lyrics-Spicetify) ![](https://img.shields.io/github/repo-size/Darkempire78/Lyrics-Spicetify)
 
 # Spotify Lyrics
 
-Spotify Lyrics is a Spotify extension that allows you to display the lyrics of the song currently playing.
+Lyrics Spicetify is a Spotify extension that allows you to display the lyrics of the song currently playing.
 
 ## Installation
 
