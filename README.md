@@ -1,4 +1,5 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/darkempire78/Lyrics-Spicetify/badge)](https://www.codefactor.io/repository/github/darkempire78/Lyrics-Spicetify) ![](https://img.shields.io/github/repo-size/Darkempire78/Lyrics-Spicetify)
+![](https://img.shields.io/codefactor/grade/github/Darkempire78/Lyrics-Spicetify?style=for-the-badge) 
+![](https://img.shields.io/github/languages/code-size/Darkempire78/Lyrics-Spicetify?style=for-the-badge) 
 
 # Spotify Lyrics
 
