@@ -69,7 +69,6 @@
         }
         a.style.float = "right"
         a.style.top = "0";
-        a.style.right = "25px";
         a.style.marginLeft = "100%";
         a.style.fontSize = "36px";
         // Music Title 
