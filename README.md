@@ -22,6 +22,12 @@ Click on the "LYRICS" button (next to the skip button) to display the lyrics.
 
 ![](https://github.com/Darkempire78/Lyrics-Spicetify/blob/main/.github/Capture1.png)
 
+## Discord
+
+Join the Discord server !
+
+[![](https://i.imgur.com/UfyvtOL.png)](https://discord.gg/sPvJmY7mcV)
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
