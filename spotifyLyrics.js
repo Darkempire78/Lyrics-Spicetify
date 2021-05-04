@@ -12,7 +12,7 @@
         return;
     }
 
-    // Setup the mode 
+    // Setup the mode
     let isEnabled = Spicetify.LocalStorage.get("lyrics") === "1";
 
     new Spicetify.Menu.Item("Lyrics Mode", isEnabled, (self) => {
@@ -25,9 +25,10 @@
 
     function createLyricsButton() {
         const b = document.createElement("button");
-        b.classList.add("button", "button-green");
-        b.innerText = "Lyrics";
+        b.classList.add("button");
+        b.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M3.979 15.045c-1.468.978-2.168 2.263-2.231 3.955h-1.748c.069-2.346 1.1-4.186 3.153-5.497l.826 1.542zm15.36-12.045c1.468 0 2.661 1.194 2.661 2.662 0 1.115-.651 2.238-2.085 2.521l-2.366-4.417c.63-.662 1.268-.766 1.79-.766zm0-2c-1.852 0-3.198.966-4.138 2.619l3.545 6.618c3.4.222 5.254-2.149 5.254-4.575 0-2.598-2.098-4.662-4.661-4.662zm-3.722 7.631l-7.418 2.977 6.602-4.5-.949-1.772-9.38 6.393 1.557 2.906 10.539-4.229-.951-1.775zm-6.38 6.87c.633.619.764 1.648.764 2.558v4.941h1.999v-5.097c0-1.776.662-3.024 1.735-4.207l-4.498 1.805z"/></svg>';
         b.id = "lyricsButton"
+        b.style.width = "32px";
         b.onclick = () => {
             if (document.getElementById("LyricsContainer").style.display === "block") {
                 closeNav();
@@ -44,19 +45,13 @@
 
     function createLyricsContainer() {
         const div = document.createElement("div");
-        div.classList.add("sidenav");
         div.id = "LyricsContainer";
-
         div.style.display = "none";
-        div.style.height = "100%";
-        div.style.width = "500px";
-        div.style.position = "absolute";
-        div.style.zIndex = "1";
-        div.style.top = "0";
-        div.style.left = "0";
+        div.style.height = "100vh";
+        div.style.width = "400px";
+        div.style.position = "relative";
         div.style.padding = "20px";
-        div.style.backgroundColor = "#111111";
-        div.style.overflowX = "hidden";
+        div.style.overflowY = 'auto';
         div.style.transition = "max-height 1000ms ease-in-out";
         
         // Append close button, title, artist, album, lyrics
@@ -72,18 +67,18 @@
         a.style.right = "25px";
         a.style.marginLeft = "100%";
         a.style.fontSize = "36px";
-        // Music Title 
+        // Music Title
         const h1 = document.createElement("h1");
         h1.id = "LyricsContainerMusicTitle"
-        h1.innerHTML = "Music Title";
+        h1.innerHTML = "Title";
         // Music album / artist
         const h2 = document.createElement("h2");
         h2.id = "LyricsContainerMusicArtistAlbum"
-        h2.innerHTML = "Music Artist";
+        h2.innerHTML = "Artist";
         // Muisc Lyrics
         const p = document.createElement("p");
         p.id = "LyricsContainerMusicLyrics"
-        p.innerHTML = "Music Lyrics";
+        p.innerHTML = "Lyrics";
         p.style.whiteSpace = "pre-line"; // Replace \n withs <br>
         
         div.appendChild(a);
@@ -123,7 +118,7 @@
 
         // Find lyrics
         fetch(`https://api.lyrics.ovh/v1/${artist}/${title}`).then(function(response) {
-            response.text().then(function(text) { 
+            response.text().then(function(text) {
                 // Convert to json
                 if (response.status === 200) {
                     const responseObject = JSON.parse(text);
@@ -132,7 +127,7 @@
                         document.getElementById("LyricsContainerMusicLyrics").innerHTML = responseObject.lyrics
                     } else {
                         document.getElementById("LyricsContainerMusicLyrics").innerHTML = "No lyrics found."
-                    } 
+                    }
                 } else {
                     document.getElementById("LyricsContainerMusicLyrics").innerHTML = "Request error."
                 }
